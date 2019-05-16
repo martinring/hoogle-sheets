@@ -1,0 +1,5 @@
+target/
+project/project/
+.ensime/
+.ensime_cache/
+.stack-work/

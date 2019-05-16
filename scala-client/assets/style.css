@@ -1,0 +1,77 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;  
+  background-color: #eee;
+  color: #333;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+#sheet {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+th {  
+  border: none;     
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: normal;
+  background-color: #ddd;
+  min-width: 32px;  
+}
+th#head-0 {  
+  visibility: collapse;
+}
+td {  
+  border: 1px solid #ddd;
+  transition: all 0.1s ease;
+  min-width: 96px;
+  text-align: right;
+  background: #fff;
+}
+td:hover {
+  background-color: #eee;
+}
+td.editing {
+  text-align: left;  
+  background: #39d;
+}
+td.editing > span {
+  display: none;
+}
+td > input[type=text] {
+  border: none;
+  color: #fff;
+  background: none;
+  margin: 0;
+  width: 94px;
+}
+td.loading {
+  text-align: center;  
+  color: #fff;
+  background: #999;
+}
+td.error {
+  text-align: center;
+  color: white;
+  background: #d34;  
+}
+h1 {
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+  height: 96px;
+  line-height: 96px;
+  margin: 0;
+  padding: 0 24px;
+}
