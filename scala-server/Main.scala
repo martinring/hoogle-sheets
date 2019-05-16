@@ -40,11 +40,11 @@ object Main extends App {
   }
 
   val route = 
-    extractUpgradeToWebSocket { _ =>    
+    extractUpgradeToWebSocket { _ =>
       handleWebSocketMessages(socket)      
     } ~    
-    getFromResourceDirectory(".") ~
-    getFromResource("index.html")
+    getFromDirectory("scala-client/assets") ~
+    getFromFile("scala-client/assets/index.html")
 
   val binding = Http().bindAndHandle(route,"localhost",3000)
 
